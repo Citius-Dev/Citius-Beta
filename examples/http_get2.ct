@@ -1,0 +1,4 @@
+// Simple HTTP test
+func main() {
+    sent http auto "GET /" [example.com:80]
+}

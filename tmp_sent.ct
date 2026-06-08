@@ -1,0 +1,1 @@
+func main() { sent http auto "GET /" [httpbin.org:80] }

@@ -1,0 +1,6 @@
+// Citius Example: HTTP GET request
+func main() {
+    print("Fetching http://httpbin.org/get...\n")
+    sent http auto "GET /get" [httpbin.org:80]
+    print("\nDone!\n")
+}

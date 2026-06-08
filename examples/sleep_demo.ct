@@ -1,0 +1,10 @@
+// Citius Example: Sleep Demo
+func main() {
+    print("Sleeping for 1 second...\n")
+    sleep 1 s
+    print("Done!\n")
+
+    print("Sleeping for 500 ms...\n")
+    sleep 500 ms
+    print("Done!\n")
+}

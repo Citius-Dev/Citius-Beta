@@ -1,0 +1,37 @@
+// Citius Example: Mandelbrot Set
+func mandel(x, y) {
+    cr = y - 0.5
+    ci = x
+    zi = 0.0
+    zr = 0.0
+    i = 0
+    while i < 1000 {
+        tmp = zr * zi
+        zr2 = zr * zr
+        zi2 = zi * zi
+        zr = zr2 - zi2 + cr
+        zi = 2.0 * tmp + ci
+        if zi2 + zr2 > 4.0 {
+            return 0
+        }
+        i = i + 1
+    }
+    return 1
+}
+
+func main() {
+    y = -1.0
+    while y < 1.0 {
+        x = -1.5
+        while x < 0.5 {
+            if mandel(x, y) {
+                print("*")
+            } else {
+                print(" ")
+            }
+            x = x + 0.03
+        }
+        print("\n")
+        y = y + 0.07
+    }
+}
