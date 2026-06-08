@@ -1,0 +1,14 @@
+# Build outputs
+*.obj
+*.exe
+build_msvc/
+build/
+
+# Temporary test files
+tmp_*
+
+# Generated C files from examples (track .ct source only)
+examples/*.c
+
+# OS files
+*.user
